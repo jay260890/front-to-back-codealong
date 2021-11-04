@@ -7,7 +7,7 @@ const artistList = [
 exports.up = async function up(sql) {
   await sql`
     INSERT INTO artists ${sql(artistList, 'id', 'name')}
-`;
+  `;
 };
 
 exports.down = async function down(sql) {
